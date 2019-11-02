@@ -11,7 +11,7 @@ scapy
 # Getting started
 
 
-## Extracting IMG4P payload from an IMG4 file:
+## Extracting IM4P payload from an IMG4 file:
 ```python
 with open("payload", 'w+') as outfile:
     with open("myfile.img4", 'rb') as infile:
