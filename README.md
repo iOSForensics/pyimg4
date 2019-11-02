@@ -12,13 +12,13 @@ scapy
 
 
 ## Extracting IMG4P payload from an IMG4 file:
-
+```python
 with open("payload", 'w+') as outfile:
     with open("myfile.img4", 'rb') as infile:
         i =  IMG4(infile.read())
         i.show() # Show the img4 file content
         outfile.write(str(i.IM4P.DATA))
-
+```
 
 # How to contribute
 Contributors are essential to PyIMG4 (as they are to most open source projects).
