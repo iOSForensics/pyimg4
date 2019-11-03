@@ -51,11 +51,11 @@ from img4 import *
 
 # How to contribute
 Contributors are essential to PyIMG4 (as they are to most open source projects).
-Drop me a line if you want to contribute.
-I also accept pull request.
+Drop us a line if you want to contribute.
+We also accept pull request.
 
 
-## Reporting issues
+# Reporting issues
 ### Questions
 It is OK so submit issues to ask questions (more than OK, encouraged). There is a label "question" that you can use for that.
 
@@ -69,4 +69,4 @@ If you're not sure whether a behavior is a bug or not, submit an issue and ask, 
 Enhancements / feature requests
 If you want a feature in PyIMG4, but cannot implement it yourself or want some hints on how to do that, open an issue with label "enhancement".
 
-Explain if possible the API you would like to have (e.g., give examples of function calls, packet creations, etc.).
+Explain if possible the API you would like to have (e.g., give examples of function calls, payload creations, etc.).
