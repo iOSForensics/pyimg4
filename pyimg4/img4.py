@@ -19,7 +19,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#import sys
+
+import sys
+
 from scapy.asn1packet import *
 from scapy.asn1fields import *
 from scapy.layers.x509 import *
