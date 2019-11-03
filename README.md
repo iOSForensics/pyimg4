@@ -22,6 +22,33 @@ with open("payload", 'w+') as outfile:
         outfile.write(str(i.IM4P.DATA))
 ```
 
+## Creating an IMG4 file from scratch:
+```python
+from img4 import *
+
+>>> p = IMG4(IM4M=IM4M(DATA='MANIFEST'),IM4P=IM4P(DATA='BLOB'))
+>>> p.show()
+###[ IMG4 ]### 
+  MAGIC     = <ASN1_IA5_STRING['IMG4']>
+  \IM4P      \
+   |###[ IM4P ]### 
+   |  MAGIC     = <ASN1_IA5_STRING['IM4P']>
+   |  TYPE      = <ASN1_IA5_STRING['']>
+   |  DESCRIPTION= <ASN1_IA5_STRING['']>
+   |  DATA      = 'BLOB'
+   |  KBAG      = None
+  \IM4M      \
+   |###[ IM4M ]### 
+   |  TYPE      = <ASN1_IA5_STRING['']>
+   |  VERSION   = 0x0 <ASN1_INTEGER[0]>
+   |  DATA      = 'MANIFEST'
+   |  SIGNATURE = None
+   |  CERTIFICATES= None
+   |  MANP      = None
+   |  DATA      = 'MANIFEST'
+
+```
+
 # How to contribute
 Contributors are essential to PyIMG4 (as they are to most open source projects).
 Drop me a line if you want to contribute.
