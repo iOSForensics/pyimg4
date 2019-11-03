@@ -13,6 +13,8 @@ scapy
 
 ## Extracting IM4P payload from an IMG4 file:
 ```python
+from img4 import *
+
 with open("payload", 'w+') as outfile:
     with open("myfile.img4", 'rb') as infile:
         i =  IMG4(infile.read())
