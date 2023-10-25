@@ -13,7 +13,7 @@ scapy
 
 ## Extracting IM4P payload from an IMG4 file:
 ```python
-from img4 import *
+from pyimg4 import *
 
 with open("payload", 'w+') as outfile:
     with open("myfile.img4", 'rb') as infile:
@@ -24,7 +24,7 @@ with open("payload", 'w+') as outfile:
 
 ## Creating an IMG4 file from scratch:
 ```python
-from img4 import *
+from pyimg4 import *
 
 >>> p = IMG4(IM4M=IM4M(DATA='MANIFEST'),IM4P=IM4P(DATA='BLOB'))
 >>> p.show()
