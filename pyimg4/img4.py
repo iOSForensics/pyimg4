@@ -132,7 +132,7 @@ class X509_ExtIMG4Statement(ASN1_Packet):
 def main():
     args = sys.argv[1:]
     if len(args) != 2:
-        print "%s <infile> <outfile>" % sys.argv[0]
+        print("%s <infile> <outfile>" % sys.argv[0])
         return -1
 
     with open(args[1], 'w+') as outfile:
